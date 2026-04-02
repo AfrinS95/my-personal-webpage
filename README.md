@@ -331,8 +331,7 @@ These changes make the page:
 
 ## 📷 Preview
 
-(Add screenshot here later)
-
+<img width="1682" height="916" alt="image" src="https://github.com/user-attachments/assets/9397c4b3-8de5-4469-9ef1-8e7ea1a73a0d" />
 
 
 ## Documentation
