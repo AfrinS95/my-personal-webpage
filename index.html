@@ -1,70 +1,247 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 500px;
-        margin: 40px auto;
-        padding: 20px;
-        background-color: #111111;
-        color: #ffffff;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
 
-      h1 {
-        color: #e85d24;
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f8fc;
+      color: #222222;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      background: linear-gradient(135deg, #ffffff, #fff3eb);
+      padding: 36px;
+      border-radius: 20px;
+      margin-top: 30px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #d9480f;
+      font-size: 2.2rem;
+    }
+
+    .hero-text p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-button {
+      display: inline-block;
+      background-color: #e85d24;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-button:hover {
+      background-color: #c94c1b;
+      text-decoration: none;
+    }
+
+    .avatar {
+      width: 180px;
+      height: 180px;
+      background-color: #e85d24;
+      color: white;
+      font-size: 64px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 6px 16px rgba(232, 93, 36, 0.25);
+      flex-shrink: 0;
+    }
+
+    .section {
+      background-color: white;
+      padding: 28px;
+      margin-top: 24px;
+      border-radius: 18px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      color: #d9480f;
+      font-size: 1.5rem;
+    }
+
+    .section p {
+      line-height: 1.7;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .skills-list li {
+      background-color: #fff1e6;
+      color: #9a3412;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: bold;
+      border: 1px solid #ffd8c2;
+    }
+
+    .projects {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      flex: 1 1 260px;
+      background-color: #fcfcfc;
+      border: 1px solid #e9e9e9;
+      border-radius: 16px;
+      padding: 22px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #333333;
+    }
+
+    .project-card p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #e85d24;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 10px;
+      margin-top: 30px;
+      color: #666666;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
         text-align: center;
       }
 
-      h2 {
-        color: white;
+      .avatar {
+        width: 140px;
+        height: 140px;
+        font-size: 52px;
       }
+    }
+  </style>
+</head>
+<body>
 
-     .box {
-        color: orange;
-     }
+  <div class="container">
 
-    #special {
-         color: yellow;
-     }
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm Afrin Salma</h1>
+        <p>I am learning HTML and CSS step by step and building my first portfolio webpage with clean structure, styling, and layout.</p>
+        <a href="#projects" class="hero-button">View My Projects</a>
+      </div>
 
-      p {
-        line-height: 1.6;
-      }
+      <div class="avatar">AS</div>
+    </div>
 
-      img {
-        width: 220px;
-        border-radius: 20px;
-        display: block;
-        margin: 20px auto;
-        border: 3px solid #e85d24;
-      }
+    <div class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a beginner in web development. Right now, I am learning how HTML gives structure to a webpage
+        and how CSS improves the design using colors, spacing, selectors, and Flexbox.
+      </p>
+    </div>
 
-      a {
-        color: #e85d24;
-      }
+    <div class="section">
+      <h2>Skills I Am Learning</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Colors</li>
+        <li>Margins</li>
+        <li>Padding</li>
+        <li>Selectors</li>
+        <li>Flexbox</li>
+      </ul>
+    </div>
 
-      .box {
-        background-color: #1e1e1e;
-        padding: 15px;
-        margin-top: 15px;
-        border: 1px solid #444;
-        border-radius: 10px;
-      }
-    </style>
-  </head>
-  <body>
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>About Me Page</h3>
+          <p>A simple webpage created using HTML and CSS basics.</p>
+        </div>
 
-    <h1>Hi, I'm [your name]</h1>
+        <div class="project-card">
+          <h3>Portfolio Page</h3>
+          <p>An improved version with sections, cards, styling, and Flexbox layout.</p>
+        </div>
+      </div>
+    </div>
 
-    <h2>About me</h2>
-    <p>Write a sentence or two about yourself here.</p>
+    <div class="section">
+      <h2>Favorite Website</h2>
+      <p>Visit <a href="https://www.google.com" target="_blank">Google</a>.</p>
+    </div>
 
-    <h2>A site I like</h2>
-    <p>Check out <a href="https://google.com">Google</a>.</p>
+    <footer>
+      © 2026 Afrin Salma | Beginner Portfolio
+    </footer>
 
-    <img src="https://placecats.com/200/150" alt="A placeholder cat photo">
+  </div>
 
-  </body>
+</body>
 </html>
