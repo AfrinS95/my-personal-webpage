@@ -327,18 +327,6 @@ These changes make the page:
 * more readable
 * more visually appealing
 * closer to real-world design practices
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## 📷 Preview
@@ -347,7 +335,9 @@ These changes make the page:
 
 
 
+## Documentation
 
+- [Concept Notes](docs/concepts.md)
 
 
 
