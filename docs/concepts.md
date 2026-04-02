@@ -1,19 +1,19 @@
 # HTML Concepts Explained
 
-## What is <head>?
+## What is `<head>`?
 
 The <head> section contains information about the webpage.
 It is not visible to users.
 
 ---
 
-## What is <title>?
+## What is `<title>`?
 
 <title> defines the name of the webpage shown in the browser tab.
 
 ---
 
-## What is <meta>?
+## What is `<meta>`?
 
 Meta tags provide instructions to the browser.
 
@@ -24,13 +24,13 @@ Meta tags do not appear on the page.
 
 ---
 
-## What is <body>?
+## What is `<body>`?
 
 The <body> contains everything visible on the webpage.
 
 ---
 
-## What is <div>?
+## What is `<div>`?
 
 <div> is a container used to group elements together.
 
